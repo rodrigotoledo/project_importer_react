@@ -5,11 +5,12 @@ import ProductList from './ProductList';
 const App = () => {
   const [file, setFile] = useState(null);
   const [imports, setImports] = useState([]);
+  const serverURL = 'http://localhost:3001';
 
   useEffect(() => {
     const fetchImports = async () => {
       try {
-        const response = await axios.get('http://localhost:3001/imports');
+        const response = await axios.get(`${serverURL}/imports`);
         setImports(response.data);
       } catch (error) {
         console.error(error);
