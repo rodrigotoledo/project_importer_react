@@ -26,7 +26,6 @@ const ProductList = ({ json }) => {
                 <p><span className="font-semibold">Category:</span> {product.category}</p>
                 <p><span className="font-semibold">Product ID:</span> {product.product_id}</p>
                 <p><span className="font-semibold">Weight:</span> {product.weight}</p>
-                <p><span className="font-semibold">Unit:</span> {product.unit}</p>
               </div>
             ))}
           </div>
