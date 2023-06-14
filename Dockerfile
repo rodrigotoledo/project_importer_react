@@ -14,5 +14,7 @@ RUN npm install
 # Copia o código-fonte do projeto
 COPY . .
 
+RUN npm run build
+
 # Define o comando para executar o projeto
 CMD ["npm", "start"]
