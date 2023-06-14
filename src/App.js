@@ -54,7 +54,7 @@ const App = () => {
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-2"
             onClick={handleFileUpload}
           >
-            Enviar Arquivo
+            Send file
           </button>
         </div>
 
